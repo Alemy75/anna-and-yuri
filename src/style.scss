@@ -1,0 +1,86 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+$green: #237746;
+$brown: #52412e;
+
+
+@font-face {
+  font-family: Headers;
+  src: url("/public/Headers.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Text;
+  src: url("/public/Text.otf") format("opentype");
+}
+
+
+
+h1,
+h2,
+h3 {
+  font-family: "Headers", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-shadow: 5px 5px color-mix(in srgb, $green 10%, transparent);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Text", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+  width: 250px;
+}
+
+
+@each $v in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+  .mt-#{$v} {
+    margin-top: 0.25rem * $v;
+  }
+
+  .mb-#{$v} {
+    margin-bottom: 0.25rem * $v;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
