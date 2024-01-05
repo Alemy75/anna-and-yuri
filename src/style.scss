@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 $green: #237746;
 $brown: #52412e;
@@ -40,6 +45,38 @@ h1 {
 
 h2 {
   font-size: 3rem;
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  padding: 10px 25px ;
+  border-radius: 1000px;
+  border: 2px solid $brown;
+  color: $brown;
+  font-family: "Text", sans-serif;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $brown;
+    color: white;
+  }
+}
+
+.button-green {
+  all: unset;
+  cursor: pointer;
+  padding: 10px 25px ;
+  border-radius: 1000px;
+  border: 2px solid $green;
+  color: $green;
+  font-family: "Text", sans-serif;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $green;
+    color: white;
+  }
 }
 
 p {

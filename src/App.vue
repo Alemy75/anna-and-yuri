@@ -7,9 +7,7 @@ import calendar from './components/calendar.vue';
 
     <div class="hero hero-tint section light-green">
       <h1>Анна & Юрий</h1>
-
       <div class="hero-img"></div>
-
       <h1>17.07.2024</h1>
     </div>
 
@@ -25,8 +23,27 @@ import calendar from './components/calendar.vue';
 
     <div class="section light-green">
       <h2>День бракосочетания</h2>
+      <p class="mb-6" style="opacity: 0.6;">17 Августа 2024 г.</p>
       <calendar />
       <h2>~ ∞ ~</h2>
+    </div>
+
+    <div class="section mix">
+      <h2>Церемония бракосочетания</h2>
+      <p class="mb-6" style="opacity: 0.6;">Дворец бракосочетания, г. Ярославль, ул. Свердлова, д. 5</p>
+      <div class="zags-img"></div>
+      <a class="button" href="https://yandex.ru/maps/org/zags/1142980596/?ll=39.883806%2C57.628814&z=16"
+        target="_blank">Посмотреть на карте</a>
+      <h2>~ 12:15 ~</h2>
+    </div>
+
+    <div class="section light-green">
+      <h2>Свадебное торжество</h2>
+      <p class="mb-6" style="opacity: 0.6;">Банкетный зал «АлхимIQ», г. Ярославль, ул. Ленина д. 10</p>
+      <div class="zags-img"></div>
+      <a class="button-green" href="https://yandex.ru/maps/org/alkhimiq/199782057872/?ll=39.877020%2C57.641519&z=13"
+        target="_blank">Посмотреть на карте</a>
+      <h2>~ 16:30 ~</h2>
     </div>
 
   </div>
@@ -36,12 +53,12 @@ import calendar from './components/calendar.vue';
 @import "./style.scss";
 
 .container {
-  width: 380px;
+  width: 400px;
   margin: 0 auto;
 
-  @media (max-width: 380px) {
-    width: calc(380px - 40px);
-    margin: 0 20px;
+  @media (max-width: 400px) {
+    width: calc(400px - 40px);
+    padding: 0 20px;
   }
 
 }
